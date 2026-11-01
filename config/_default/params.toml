@@ -1,9 +1,6 @@
 mainSections   = ["post"]
 rssFullContent = false
 
-[footer]
-    since = 2026
-
 [article]
     toc         = false
     readingTime = false

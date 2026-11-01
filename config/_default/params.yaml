@@ -2,3 +2,7 @@ favicon: /uploads/favicon.png
 sidebar:
   subtitle: Doğadan ilham alan sade işler.
   avatar: /uploads/logo.png
+footer:
+  owner: Hilal
+  since: 2026
+  customText: ""

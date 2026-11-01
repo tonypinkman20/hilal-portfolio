@@ -41,6 +41,24 @@ content:
         required: true
         options:
           media: images
+      - name: footer
+        label: Sayfa altı (footer)
+        type: object
+        fields:
+          - name: owner
+            label: Telif satırındaki ad
+            description: Örnek çıktı "© 2026 Hilal".
+            type: string
+          - name: since
+            label: Başlangıç yılı
+            description: Bu yıldan farklıysa "2024 - 2026" gibi görünür.
+            type: number
+            options:
+              min: 2000
+          - name: customText
+            label: Ek yazı
+            description: 'İsteğe bağlı. Bağlantı eklemek için [Instagram](https://instagram.com/kullanici) biçimini kullanın.'
+            type: string
 
   - name: projeler
     label: Projeler
