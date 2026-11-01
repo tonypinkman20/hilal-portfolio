@@ -1,13 +1,8 @@
 mainSections   = ["post"]
 rssFullContent = false
-favicon        = "/favicon.png"
 
 [footer]
     since = 2026
-
-[sidebar]
-    subtitle = "Doğadan ilham alan sade işler."
-    avatar   = "img/avatar.png"
 
 [article]
     toc         = false

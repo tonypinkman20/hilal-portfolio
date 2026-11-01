@@ -20,6 +20,7 @@ Hugo extended 0.157.0 veya üstü gerekir.
 - Görseller: `assets/uploads/`
 - Hakkımda ve İletişim: `content/page/`
 - Renkler: `assets/scss/custom.scss`
-- Site ayarları: `config/_default/`
+- Logo, favicon ve alt yazı: `config/_default/params.yaml`
+- Diğer site ayarları: `config/_default/`
 
 `content/` altındaki metinler ve görseller örnektir.

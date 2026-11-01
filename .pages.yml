@@ -5,7 +5,8 @@ media:
   input: assets/uploads
   output: /uploads
   rename: safe
-  categories: [image]
+  # HEIC gibi Hugo'nun işleyemediği biçimler build'i bozmasın.
+  extensions: [png, jpg, jpeg, webp]
 
 settings:
   # Formda olmayan alanlar (menü, sıra vb.) kaydederken silinmesin.
@@ -13,6 +14,34 @@ settings:
     merge: true
 
 content:
+  - name: site-gorunumu
+    label: Site Görünümü
+    type: file
+    path: config/_default/params.yaml
+    format: yaml
+    fields:
+      - name: sidebar
+        label: Kenar menü
+        type: object
+        fields:
+          - name: avatar
+            label: Logo
+            description: Otomatik olarak kare kırpılır ve küçültülür.
+            type: image
+            required: true
+            options:
+              media: images
+          - name: subtitle
+            label: Logonun altındaki yazı
+            type: string
+      - name: favicon
+        label: Favicon (tarayıcı sekmesindeki küçük simge)
+        description: Otomatik olarak kare kırpılır ve küçültülür. Logo ile aynı görsel de seçilebilir.
+        type: image
+        required: true
+        options:
+          media: images
+
   - name: projeler
     label: Projeler
     type: collection

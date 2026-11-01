@@ -51,6 +51,11 @@
             {{ $resource = $resource | images.Filter $filter }}
         {{ end }}
 
+        {{/* Logo ve favicon her boyutta yüklenebilsin: kare kırp, küçült. */}}
+        {{ if and (reflect.IsImageResourceProcessable $resource) (in (slice site.Params.sidebar.avatar site.Params.favicon) .Image) }}
+            {{ $resource = $resource.Fill "256x256 Center" }}
+        {{ end }}
+
         {{ if $local }}
             {{ $permalink = $resource.RelPermalink }}
         {{ end }}
