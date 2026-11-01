@@ -1,0 +1,14 @@
+baseURL                = "https://tonypinkman20.github.io/hilal-portfolio/"
+locale                 = "tr-tr"
+title                  = "Hilal"
+copyright              = "Hilal"
+theme                  = "hugo-theme-stack"
+defaultContentLanguage = "tr"
+hasCJKLanguage         = false
+
+[pagination]
+    pagerSize = 6
+
+[permalinks]
+    post = "/projeler/:slug/"
+    page = "/:slug/"

@@ -1,0 +1,66 @@
+/*
+ * Hilal Portfolio doğal renk paleti
+ * Yeşil: ana vurgu, açık kahve: ikincil tonlar, krem: zemin.
+ * Renkleri değiştirmek için yalnızca aşağıdaki değişkenleri düzenlemek yeterli.
+ */
+:root {
+    --body-background: #f3eee2;
+
+    --accent-color: #4a6b4f;
+    --accent-color-darker: #38523c;
+    --accent-color-text: #fffdf7;
+    --body-text-color: #5e5748;
+
+    --card-background: #fffdf7;
+    --card-background-selected: #e6dfcd;
+    --card-text-color-main: #2e3a2e;
+    --card-text-color-secondary: #665e4e;
+    --card-text-color-tertiary: #6f6756;
+    --card-separator-color: rgba(166, 138, 100, 0.25);
+
+    --blockquote-background-color: #efe7d6;
+    --link-background-color: 196, 171, 130;
+    --link-background-opacity: 0.45;
+    --link-background-opacity-hover: 0.7;
+
+    --table-border-color: #d8ccb6;
+    --tr-even-background-color: #f4eddf;
+    --code-background-color: rgba(166, 138, 100, 0.16);
+    --code-text-color: #5e5748;
+
+    --base-font-family: "Nunito Sans", var(--sys-font-family), sans-serif;
+
+    --card-border-radius: 14px;
+    --tag-border-radius: 6px;
+
+    &[data-scheme="dark"] {
+        --body-background: #20241d;
+
+        --accent-color: #b5c9a0;
+        --accent-color-darker: #cfdcbf;
+        --accent-color-text: #20241d;
+        --body-text-color: rgba(240, 233, 218, 0.75);
+
+        --card-background: #2c3127;
+        --card-background-selected: #3a4034;
+        --card-text-color-main: #f0e9da;
+        --card-text-color-secondary: #cdc4b0;
+        --card-text-color-tertiary: #b5ac98;
+        --card-separator-color: rgba(196, 171, 130, 0.2);
+
+        --blockquote-background-color: #363b30;
+        --table-border-color: #55594b;
+        --tr-even-background-color: #363b30;
+    }
+}
+
+/* Tema kategori renklerini ada göre rastgele seçiyor, burada palete bağlanıyor. */
+.article-category a {
+    background-color: var(--accent-color) !important;
+    color: var(--accent-color-text) !important;
+}
+
+/* Alıntılarda açık kahve ayraç */
+.article-content blockquote {
+    border-inline-start-color: #c4ab82;
+}
