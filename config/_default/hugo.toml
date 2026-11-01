@@ -5,10 +5,12 @@ copyright              = "Hilal"
 theme                  = "hugo-theme-stack"
 defaultContentLanguage = "tr"
 hasCJKLanguage         = false
+# Panelde ileri bir tarih seçilirse proje sessizce kaybolmasın.
+buildFuture            = true
 
 [pagination]
     pagerSize = 6
 
 [permalinks]
-    post = "/projeler/:slug/"
+    post = "/projeler/:contentbasename/"
     page = "/:slug/"

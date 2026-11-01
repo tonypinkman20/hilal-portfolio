@@ -2,8 +2,7 @@
 title: Doğal Bir Marka Kimliği
 description: Küçük bir üretici için logo, renk ve etiket çalışması.
 date: 2026-10-20
-slug: dogal-marka-kimligi
-image: cover.png
+image: /uploads/dogal-marka-kimligi.png
 categories:
     - Tasarım
 ---

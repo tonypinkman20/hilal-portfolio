@@ -2,8 +2,7 @@
 title: Küçük Bir Yürüyüş Rehberi
 description: Doğa yürüyüşleri için katlanabilir basılı harita.
 date: 2026-06-18
-slug: yuruyus-rehberi
-image: cover.png
+image: /uploads/yuruyus-rehberi.png
 categories:
     - Tasarım
 ---

@@ -2,8 +2,7 @@
 title: Zeytin Bahçesinde Bir Sabah
 description: Doğal ışıkla çekilmiş kısa bir fotoğraf serisi.
 date: 2026-09-14
-slug: zeytin-bahcesi-fotograf
-image: cover.png
+image: /uploads/zeytin-bahcesi-fotograf.png
 categories:
     - Fotoğraf
 ---

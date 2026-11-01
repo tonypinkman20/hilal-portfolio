@@ -14,7 +14,10 @@ Hugo extended 0.157.0 veya üstü gerekir.
 
 ## Düzenleme
 
+İçerik [Pages CMS](https://app.pagescms.org) panelinden düzenlenir, ayarları `.pages.yml` içindedir. Elle düzenlemek için:
+
 - Projeler: `content/post/`
+- Görseller: `assets/uploads/`
 - Hakkımda ve İletişim: `content/page/`
 - Renkler: `assets/scss/custom.scss`
 - Site ayarları: `config/_default/`

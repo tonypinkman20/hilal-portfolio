@@ -1,0 +1,98 @@
+# Pages CMS paneli: https://app.pagescms.org
+media:
+  name: images
+  label: Görseller
+  input: assets/uploads
+  output: /uploads
+  rename: safe
+  categories: [image]
+
+settings:
+  # Formda olmayan alanlar (menü, sıra vb.) kaydederken silinmesin.
+  content:
+    merge: true
+
+content:
+  - name: projeler
+    label: Projeler
+    type: collection
+    path: content/post
+    subfolders: false
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [title, date]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Proje adı
+        type: string
+        required: true
+      - name: description
+        label: Kısa açıklama
+        type: text
+      - name: date
+        label: Tarih
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: image
+        label: Kapak görseli
+        type: image
+        options:
+          media: images
+      - name: categories
+        label: Kategori
+        type: select
+        options:
+          multiple: true
+          values: [Tasarım, Fotoğraf, Web]
+      - name: body
+        label: Proje yazısı
+        type: rich-text
+        options:
+          media: images
+          format: markdown
+
+  - name: hakkimda
+    label: Hakkımda
+    type: file
+    path: content/page/hakkimda/index.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Sayfa başlığı
+        type: string
+        required: true
+      - name: description
+        label: Kısa açıklama
+        type: text
+      - name: body
+        label: Sayfa içeriği
+        type: rich-text
+        options:
+          media: images
+          format: markdown
+
+  - name: iletisim
+    label: İletişim
+    type: file
+    path: content/page/iletisim/index.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Sayfa başlığı
+        type: string
+        required: true
+      - name: description
+        label: Kısa açıklama
+        type: text
+      - name: body
+        label: Sayfa içeriği
+        type: rich-text
+        options:
+          media: images
+          format: markdown
